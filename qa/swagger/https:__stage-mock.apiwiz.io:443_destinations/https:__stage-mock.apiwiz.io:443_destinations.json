@@ -1,0 +1,148 @@
+{
+  "openapi" : "3.0.1",
+  "info" : {
+    "title" : "https:__stage-mock.apiwiz.io:443_destinations",
+    "description" : "https:__stage-mock.apiwiz.io:443_destinations",
+    "version" : "1.0"
+  },
+  "servers" : [ {
+    "url" : "https://stage-mock.apiwiz.io/"
+  } ],
+  "paths" : {
+    "/destinations" : {
+      "get" : {
+        "summary" : "https:__stage-mock.apiwiz.io:443_destinations",
+        "description" : "https:__stage-mock.apiwiz.io:443_destinations",
+        "operationId" : "https:__stage-mock.apiwiz.io:443_destinations",
+        "parameters" : [ {
+          "name" : "x-tenant",
+          "in" : "header",
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "a95248ab-0f4e-448e-a090-8069c347d796"
+        }, {
+          "name" : "serverside",
+          "in" : "header",
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : " \"<html>\\n\" +         \"    <head>\\n\" +         \"        <title>Example</title>\\n\" +         \"    </head>\\n\" +         \"    <body>\\n\" +         \"        <!-- #include file=\\\"header.html\\\" -->\\n\" +         \"        <h1>Welcome!</h1>\\n\" +         \"        <!-- #echo var=\\\"REMOTE_ADDR\\\" -->\\n\" +         \"        <!-- #config timefmt=\\\"%Y-%m-%d %H:%M:%S\\\" -->\\n\" +         \"        The time is <!-- #echo var=\\\"DATE_LOCAL\\\" -->.\\n\" +         \"        <!-- #printenv -->\\n\" +         \"    </body>\\n\" +         \"</html>\";"
+        } ],
+        "responses" : {
+          "404" : {
+            "description" : "Response for endpoint GET-destinations",
+            "headers" : {
+              "date" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string"
+                }
+              },
+              "server" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string"
+                }
+              },
+              "x-envoy-upstream-service-time" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string"
+                }
+              },
+              "expires" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string"
+                }
+              },
+              "transfer-encoding" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string"
+                }
+              },
+              "vary" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string"
+                }
+              },
+              "x-frame-options" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string"
+                }
+              },
+              "strict-transport-security" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string"
+                }
+              },
+              "pragma" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string"
+                }
+              },
+              "x-xss-protection" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string"
+                }
+              },
+              "x-content-type-options" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string"
+                }
+              },
+              "content-type" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string"
+                }
+              },
+              "cache-control" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string"
+                }
+              }
+            },
+            "content" : {
+              "*/*" : {
+                "schema" : {
+                  "type" : "array",
+                  "example" : "[{\"expectationId\":\"646dd0ea2e0f341e9bf67000\",\"expectationName\":\"aws-iot-wireless-CreateDestination-201\",\"groupName\":\"AWS IOT wireless\",\"reason\":\"method didn't match,query matched,header matched,cookie matched,body didn't match\"},{\"expectationId\":\"646dd0f79c40a67eb474c66b\",\"expectationName\":\"aws-iot-wireless-CreateDestination-200\",\"groupName\":\"AWS IOT wireless\",\"reason\":\"method didn't match,query matched,header matched,cookie matched,body didn't match\"}]",
+                  "items" : {
+                    "required" : [ "expectationId", "expectationName", "groupName", "reason" ],
+                    "type" : "object",
+                    "properties" : {
+                      "expectationId" : {
+                        "type" : "string"
+                      },
+                      "expectationName" : {
+                        "type" : "string"
+                      },
+                      "groupName" : {
+                        "type" : "string"
+                      },
+                      "reason" : {
+                        "type" : "string"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components" : { },
+  "x-original-swagger-version" : "2.0"
+}
